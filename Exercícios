@@ -1,11 +1,9 @@
 <html>
-
-<head>
-    <title>Desafio Introdução a JavaScript</title>
-</head>
-
-<body>
-    <script>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+        <body>
+            <script>
     
     QUESTÃO 1:
                 var endereço = {
@@ -69,7 +67,6 @@
         for (let i = 0; i < usuarios.length; i++) {
             console.log("O " + usuarios[i].nome + " possui as habilidades: " + usuarios[i].habilidades.join(", "));
         }
-    </script>
-</body>
-
+          </script>
+     </body>
 </html>
