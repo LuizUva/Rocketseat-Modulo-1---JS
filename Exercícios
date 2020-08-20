@@ -6,27 +6,30 @@
 
 <body>
     <script>
-        var rua = "Rua dos Pinheiros";
-        var numero = 1293;
-        var bairro = "Centro";
-        var cidade = "São Paulo";
-        var uf = "SP";
-        console.log('O suario mora em ' + cidade + '/' + uf + ',');
-        console.log('no bairro ' + bairro + ', na rua "' + rua + '"' + ' com');
-        console.log('N° ' + numero);
+    
+    QUESTÃO 1:
+                var endereço = {
+                    rua: 14,
+                    bairro: 'campo grande',
+                    uf: 'rj'};
 
-        //Questão 2 Impa e par
-        function pares(x, y) {
-            for (var i = x; i <= y; i++) {
+                console.log('O cara mora na'
+                + endereço.rua + ' , do bairro '
+                + endereço.bairro + ' e uf '
+                + endereço.uf); 
+
+    QUESTÃO 2:
+                function pares(x,y) {                    
+                for (i = x; i <= y; i++) {
                 if (i % 2 == 0) {
-                    console.log(i);
-                    console.log('-');
+                
+                console.log(i);
                 }
-            }
-        }
-        pares(32, 321);
+                }
+                }
+                pares(32, 321);  
 
-        //Questão 3
+     QUESTÃO 3:
         function temHabilidade(skills, find) {
             for (var i = 0; i < skills.length; i++) {
                 if (skills.indexOf('Javascript') == find) {
@@ -40,23 +43,22 @@
         var resultado = temHabilidade('javascript', 'javascript');
         console.log(resultado);
 
-        //Questão 4
-        function experiencia(anos) {
-            if (anos >= 0 && anos <= 1) {
-                return 'iniciante';
-            } else if (anos >= 3 && anos <= 1) {
-                return 'intermediarios';
-            } else if (anos >= 3 && anos <= 6) {
-                return 'Avançado';
-            } else if (anos >= 7) {
-                return ' Jedi Master';
-            }
-        }
-        var idade = 7;
-        var z = experiencia(idade);
-        console.log(z);
+      QUESTÃO 4:
+                function experiencia(anos) {
+                if (anos >= 0 && anos <= 1) {
+                    return 'iniciante'; }
+                else if (anos >= 3 && anos <= 1) {
+                    return 'intermediario'; }
+                else if (anos >= 3 && anos <= 6) {
+                    return 'Avançado'; }
+                else if (anos >= 7) {
+                    return 'Jedi'; };
+                }
+                var anos = 5;
+                var z = experiencia(anos);
+                console.log(z); 
 
-        // Questão 5
+       QUESTÃO 5:
         var usuarios = [{
             nome: "Diego",
             habilidades: ["Javascript", "ReactJS", "Redux"]
